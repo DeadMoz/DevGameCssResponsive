@@ -1,0 +1,72 @@
+//*Colors
+
+//!mainColors
+$color-primary: #202938;
+$color-secondary: #0761dc;
+$color-secondary-light: #3379d8;
+$color-tertiary: #ff04ab;
+
+//!otherColors
+$color-bg: #111a23;
+$color-white: #fff;
+$color-black: #000;
+$color-subtitle: #7a7a7a;
+$color-filter: #4c5564;
+$color-green: rgba(4, 150, 41, 0.993);
+$color-orange: #ffa500;
+$color-red-dark: #710819;
+$color-red: #9b061c;
+$color-red-light: #a41b2f;
+$color-purple: #d338f8;
+$color-purple-dark: #7e30a0;
+$color-shadow: #8383ff;
+$color-discount: #ffef00;
+
+//!override Colors
+
+$primary: #941b80;
+$secondary: #19bed1;
+$secondaryDark: #3c4b6d;
+$tertiary: #ef394e;
+$gray: #e1e1e1;
+$subtitle: #818489;
+$search: #eaeaec;
+$success: #3bae03;
+
+//!Color MAPS
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "secondaryDark": $secondaryDark,
+    "tertiary": $tertiary,
+    "subtitle": $subtitle,
+    "search": $search,
+    "gray": $gray,
+    "success": $success,
+);
+
+//!fontSize Variables
+
+$fs-1: 2.5rem;
+$fs-2: 2rem;
+$fs-3: 1.75rem;
+$fs-4: 1.5rem;
+$fs-5: 1.25rem;
+$fs-6: 1rem;
+
+
+
+//*Font-Size
+$font-size-sm: 1.1rem;
+$font-size-default: 1.5rem;
+$font-size-lg: 1.8rem;
+$font-size-title: 2.4rem;
+
+//*FontFamily
+// $font-Sans: "DM Sans", sans-serif;
+// $font-poppins: "Poppins", sans-serif;
+// $font-rubik: "Rubik", sans-serif;
+
+//*Width
+$main-width: 110rem;

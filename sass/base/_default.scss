@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+/* 
+!0-576px= Phone
+!576px-768px= Phone Landscape
+!768px-992px= Tablet Portrait
+!992px-1200px= Tablet Landscape
+!1200px - 1800px= Laptop
+!1800px > = Big Desktop
+*/
+
+html {
+  font-size: 62.5%;
+
+  @include Responsive(tabletL) {
+    font-size: 58.5%;
+  }
+
+  @include Responsive(tablet) {
+    font-size: 56.25%;
+  }
+
+  @include Responsive(phoneL) {
+    font-size: 50%;
+  }
+
+  @include Responsive(phone) {
+    font-size: 43.75%;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:root {
+  --bs-body-bg: #111a23;
+}
+
+body {
+  font-weight: 500;
+  --bs-body-font-size: 1.6rem;
+  --bs-body-color: $color-bg;
+  --bs-body-font-family: IranSansWeb, "sans-serif";
+}

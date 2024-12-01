@@ -1,0 +1,82 @@
+.footer {
+  width: 100%;
+  padding: 3rem 0;
+  // height: 20rem;
+  margin-top: 2.5rem;
+  background-color: $color-primary;
+
+  &__content {
+    // width: 1200px;
+    margin: 0 auto;
+    @include centerizeTag(center, space-evenly);
+
+    &-item {}
+
+    &-pic {
+      @include centerizeTag();
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    &-img {
+      width: 15rem;
+    }
+
+    &-sublogo {
+      color: $color-white;
+      font-weight: bold;
+      font-size: 1.8rem;
+    }
+
+    &-list {
+      display: flex;
+      gap: 2rem;
+      font-size: $font-size-default;
+      color: $color-subtitle;
+      font-weight: bold;
+
+      @include Responsive(phone) {
+        flex-direction: column;
+      }
+    }
+
+    &-copy {
+      display: flex;
+      gap: 2.5rem;
+      font-size: $font-size-default;
+      color: $color-subtitle;
+      font-weight: bold;
+    }
+
+    &-socialmedia {
+      @include centerizeTag();
+      gap: 1.5rem;
+    }
+
+    &-social {
+      width: 4.5rem;
+      height: 4.5rem;
+      background-color: $color-bg;
+      border-radius: 0.5rem;
+      @include centerizeTag();
+      box-shadow: 0 0 0.5rem $color-shadow;
+      transition: all 0.4s ease-in;
+
+      &:hover {
+        cursor: pointer;
+        transform: translateY(-5px);
+
+        .footer__content-icon {
+          transform: rotateY(360deg);
+          color: $color-secondary;
+        }
+      }
+    }
+
+    &-icon {
+      color: $color-white;
+      font-size: 2rem;
+      transition: all 0.4s ease-in;
+    }
+  }
+}

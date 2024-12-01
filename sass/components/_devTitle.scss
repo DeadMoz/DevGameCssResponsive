@@ -1,0 +1,50 @@
+.dev-title {
+  @include centerizeTag(center, space-between);
+
+  &__title {
+    @include Responsive(phoneL) {
+      flex-direction: column;
+    }
+  }
+
+  &__list {
+    @include centerizeTag();
+    gap: 2.5rem;
+  }
+
+  &__item {
+    font-size: $font-size-default;
+    color: $color-white;
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: center;
+
+    &.active {
+      color: $color-secondary;
+      border-top: 2px solid $color-secondary;
+    }
+  }
+
+  &__btns {
+    @include centerizeTag();
+    gap: 10px;
+
+    @include Responsive(tablet) {
+      display: none;
+    }
+  }
+
+  &__btn {
+    width: 40px;
+    height: 40px;
+    color: $color-white;
+    @include centerizeTag();
+    border-radius: 6px;
+
+    &.active {
+      background-color: $color-secondary;
+    }
+  }
+
+  &__icon {}
+}
